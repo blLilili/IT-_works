@@ -1,0 +1,56 @@
+*{box-sizing: border-box; margin: 0; padding: 0;}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+img{width: 100%; height: auto;}
+header{
+    padding: 2.5rem;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    transform: translateX(-1000px);
+    animation-name: slideIn;
+    animation-duration: 1sec;
+    animation-fill-mode: forwards;
+}
+@keyframes slideIn{
+    from{transform: translateX(-1000);}
+    to{transform: translateX(0);}
+}
+nav ul{
+    list-style-type: none;
+}
+nav ul li{
+    display: inline;
+    margin-right: 1rem;
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+section img{
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgb(7, 28, 86);
+}
+section{
+    display: flex;
+    padding: 2rem;
+}
+section h1{
+    margin: 1rem 0;
+}
+section p{
+    line-height: 2;
+}
+section a{
+    background-color: #250766;
+    color: #fff;
+    padding: .5rem 1rem;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: scale .2sec;
+}
+section a{
+    scale: .98;
+}
